@@ -1,0 +1,41 @@
+:root {
+    $text-primary: #000;
+    $bgPrimary: #fff;
+    $bgSecondary: #F9F9F9;
+    $pink: #0071bd;
+    $light-blue: #e6f7ff;
+    $border: #d9d9d9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    display: flex;
+    overflow: hidden;
+
+
+    .navbar {
+        flex: 1;
+    }
+
+    .main {
+        flex: 8;
+        width: 100%;
+
+        .routes {
+            padding: 20px;
+        }
+    }
+
+    .footer {
+        background-color: #001529;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+}
