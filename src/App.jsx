@@ -2,15 +2,13 @@ import './App.scss'
 import { Routes, Route, Link } from 'react-router-dom'
 import { Layout, Typography, Space } from 'antd'
 
-import { Navbar, Homepage, Cryptocurrencies, CryptoDetails, News, Exchanges } from './components'
+import { Navbar, Homepage, Cryptocurrencies, CryptoDetails, News } from './components'
 
 function App() {
 
   return (
     <div className="App">
-      <div className="navbar">
-        <Navbar />
-      </div>
+      <Navbar />
       <div className="main">
         <Layout>
           <div className="routes">
@@ -20,8 +18,6 @@ function App() {
               <Route path="/cryptocurrencies" element={<Cryptocurrencies />}>
               </Route>
               <Route path="/crypto/:coinId" element={<CryptoDetails />}>
-              </Route>
-              <Route path="/exchanges" element={<Exchanges />}>
               </Route>
               <Route path="/news" element={<News />}>
               </Route>
@@ -37,7 +33,6 @@ function App() {
           </Typography.Title>
           <Space>
             <Link to="/">Home</Link>
-            <Link to="/exchanges">Exchanges</Link>
             <Link to="/news">News</Link>
           </Space>
         </div>

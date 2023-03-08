@@ -3,4 +3,3 @@ export { default as Cryptocurrencies } from '../components/Cryptocurrencies/Cryp
 export { default as CryptoDetails } from '../components/CryptoDetails/CryptoDetails.jsx';
 export { default as Homepage } from '../components/Homepage/Homepage.jsx';
 export { default as News } from '../components/News/News.jsx';
-export { default as Exchanges } from '../components/Exchanges/Exchanges.jsx';
